@@ -17,6 +17,26 @@ A lesser (but notable) objective is that the language-agnostic components of
 Verible be usable for rapidly developing language support tools for other
 languages.
 
+# Prerequisites
+
+For installing bazel follow the below steps:
+1) sudo apt update
+
+## Basic requirements
+2) sudo apt install cmake ninja-build wget python3 python3-pip
+
+### One time setup
+sudo apt install curl gnupg  
+curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor > bazel.gpg  
+sudo mv bazel.gpg /etc/apt/trusted.gpg.d/  
+echo "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list  
+
+### Install and update Bazel
+sudo apt update && sudo apt install bazel  
+
+### To check if the installation is successfull  
+bazel --version  
+
 ## Build
 
 Verible's code base is written in C++.
