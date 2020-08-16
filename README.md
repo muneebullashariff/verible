@@ -20,10 +20,10 @@ languages.
 # Prerequisites
 
 For installing bazel follow the below steps:
-1) sudo apt update
+sudo apt update
 
 ## Basic requirements
-2) sudo apt install cmake ninja-build wget python3 python3-pip
+sudo apt install cmake ninja-build wget python3 python3-pip
 
 ### One time setup
 sudo apt install curl gnupg  
